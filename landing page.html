@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title> Snad Survey Form</title>
+	
+</head>
+<body>
+
+     <p id="description"> Dear Learner
+     This survey aims to measure your satisfaction with the courses offered at our center </p>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Survey from for web developer course
+            </h1>
+            
+        </header>
+        <form action="" id="survey-form">
+
+            
+            <section class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your full name" required>
+            </section>
+           
+            <section class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </section>
+            
+            <section class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </section>
+            
+            <section class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </section>
+           
+            <section class="form-group">
+                <p id="quest">Which option best describes how you understand the course ?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select one option</option>
+                    <option value="understand well from the lecturer">understand well from the lecturer</option>
+                    <option value="Understand 50% and continue learning from YouTube">Understand 50% and continue learning from YouTube</option>
+                    <option value="I cant understand anything from the lecture">I can not understand anything from the lecture</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            
+            <section class="form-group">
+                <p id="quest">How you come to know about this COURSE ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Facebook"
+                    class="inputRadio"
+                    >Facebook
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value=" other social-media"
+                    class="inputRadio"
+                    > other Social Media
+                </label>
+                
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </section>
+           
+            <section class="form-group">
+                <p id="quest">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> computer basic
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </section>
+			<section class="form-group">
+                <p id="quest">how can we improve this course ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Increasing the number of credit hours for the course"> Increasing the number of credit hours for the course
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Provide more exercises by the lecturer"> Provide more exercises by the lecturer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Change the current lecturer">  Change the current lecturer
+                </label>
+                
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </section> 
+			<section class="form-group">
+                <p id="quest">Do you prefer to attend the  lecture in our center  or online ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="in the center"
+                    class="inputRadio"
+                    checked> in the center
+                </label>
+                
+                
+                <label for="">
+                    <input type="radio" name="source" value="Online"
+                    class="inputRadio"
+                    > Online
+                </label>
+            </section>
+            
+            <section class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="45" rows="3"  id="feedback" class="textarea" placeholder="write your feedback here..."></textarea>
+            </section>
+            <section class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </section>
+        </form>
+    </div>
+	
+	<p id="description">
+                Thank you for giving us your time to help us to improve our course
+            </p>
+</body>
+</html>
